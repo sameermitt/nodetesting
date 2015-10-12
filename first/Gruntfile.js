@@ -23,7 +23,7 @@ module.exports = function (grunt) {
     });
 
     // Register group tasks
-    grunt.registerTask('build', [ 'browserify' ]);
+    grunt.registerTask('build', ['babel' ,'browserify']);
 
     //Original
     // grunt.registerTask('build', [ 'jshint', 'browserify' ]);

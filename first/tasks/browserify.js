@@ -22,10 +22,10 @@ module.exports = function browserify(grunt) {
 	// Options
 	return {
 		build: {
-            src: './public/main.js',
+            src: './.dist/main.js',
             dest: './public/bundle.js',
             options: {
-                transform: ['reactify', 'require-globify']
+                transform: ['reactify']
             }
             //,
 			//files: {

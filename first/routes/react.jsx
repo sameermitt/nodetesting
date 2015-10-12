@@ -25,11 +25,9 @@ var DataCollection = require('../public/views/datacollection.jsx');
 var Bye = require('../public/views/bye.jsx');
 
 var routes = module.exports = (
-    <Router.Route path='/' handler={App}>
-    	<Router.Route name='left' path='left' handler={Left} >
+    <Router.Route path='/left' handler={App}>
     		<Router.Route name='welcome' path='welcome' handler={Welcome} />
     		<Router.Route name='data' path='data' handler={DataCollection} />
     		<Router.Route name='bye' path='bye' handler={Bye} />
-    	</Router.Route>
     </Router.Route>
 );

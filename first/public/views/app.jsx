@@ -18,6 +18,13 @@
 var Layout = require('./layout.jsx');
 var React = require('react');
 var Router = require('react-router');
+var redux = require('redux');
+var Provider = require('react-redux').Provider;
+
+var reducers = require('../reducers');
+
+var store = redux.createStore(reducers);
+var Left = require('./left.jsx');
 
 module.exports = React.createClass({
 
@@ -25,7 +32,9 @@ module.exports = React.createClass({
 
     return (
       <Layout {...this.props}>
-        <Router.RouteHandler {...this.props}/>
+       
+        	<Left />
+       
       </Layout>
     );
   }

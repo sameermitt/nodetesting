@@ -11,7 +11,7 @@ module.exports = function babel(grunt){
         dist:{
             files:[{
                 expand: true,
-                cwd: 'src',
+                cwd: 'public',
                 src: ['**/*.js', '**/*.jsx'],
                 dest: '.dist'
             }]

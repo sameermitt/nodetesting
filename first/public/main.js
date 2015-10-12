@@ -18,10 +18,11 @@
 var Routes = require('../routes/react.jsx');
 var Client = require('react-engine/lib/client');
 
+
 // Include all view files. Browerify doesn't do
 // this automatically as it can only operate on
 // static require statements.
-require('./views/**/*.jsx', {glob: true});
+require('./views/app.jsx');
 
 // boot options
 var options = {
