@@ -32,9 +32,9 @@ module.exports = React.createClass({
 
     return (
       <Layout {...this.props}>
-       
-        	<Left />
-       
+      	<Provider store={store}>
+        	{() => <Router.RouteHandler {...this.props} />}
+        </Provider>
       </Layout>
     );
   }

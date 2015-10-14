@@ -3,8 +3,6 @@ var Router = require('react-router');
 
 module.exports = React.createClass({
 	render: function(){
-		console.log(this.props);
-
 		return(
 			<div id="welcome" className="">
 				<h1>Welcome!</h1>

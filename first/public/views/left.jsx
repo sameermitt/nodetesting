@@ -20,6 +20,9 @@ var actions = require('../actions');
 var Left = React.createClass ({
 	onChildUpdate: function(text){
 		this.props.dispatch(actions.updateName(text));
+	},
+	componentDidMount: function(){
+		console.log("SMITTAL - componentDidMount");
 	},	
 	render: function() {
 		return(
